@@ -24,10 +24,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: "Install dependencies"
-    - run: npm i
+      run: npm i
 
     - name: "Build command"
-    - run: npm run build
+      run: npm run build
 
 
   unit-tests:
@@ -47,7 +47,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: "Install dependencies"
-    - run: npm i
+      run: npm i
 
     - name: "Running test cases"
-    - run: npm run test
+      run: npm run test
